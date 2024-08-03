@@ -1,0 +1,125 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    height: 100%;
+    width: 100%;
+}
+
+main{
+    position: relative;  /* the div and elements in this main element can't overlap it */
+    overflow: hidden;   /* the extra content and the scroll bar will be hide itself by this property*/
+
+}
+
+@font-face {
+    font-family: font-1; 
+    src: url(./assets/jost-variable.ttf);
+}
+
+@font-face {
+    font-family: font-2;
+    src: url(./assets/font-1.ttf);
+}
+
+@font-face {
+    font-family: font-3;
+    src: url(./assets/font-2.ttf);
+}
+
+
+.page-1{
+    height: 100vh;
+    width: 100vw;
+    background: red;
+    position:relative;
+}
+
+.page-1>video{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.page-1>nav{
+    position: absolute;
+    height: 8vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 29px;
+}
+
+.page-1>nav>img{
+    width: 9%;
+}
+
+.right-nav>button{
+    margin-top: 1.6vw;
+    padding: 10px 20px;
+    border-radius: 50px;
+    border: 1px solid white;
+    color: white;
+    background-color: #0b48ed;
+    font-family: font-1;
+    font-size: 14px;
+}
+
+.page-1-bottom{
+    position: absolute;
+    bottom: 5%;
+    color: white;
+    /* background: red; */
+    height: 35vh;
+    width: 50vw;
+    left:10%;
+}
+
+.page-1-bottom> h1{
+    font-family: font-1;
+    font-size: 5vw;
+    font-weight: 100;
+    line-height: 1;
+}
+
+
+.page-1-bottom-inner{
+    position: absolute;
+    /* background: green; */
+    bottom: 0%;
+    height: 35%;
+    width: 100%;
+    font-family: font-1;
+}
+
+.page-1-bottom-inner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.page-1-bottom-inner>button{
+    padding: 10px 20px;
+    border: none;
+    background-color: #fff;
+    border-radius: 50px;
+    color: #0b48ed;
+    font-size: 16px;
+    font-family: font-2;
+}
+
+.page-1-bottom-inner>h4{
+    font-size: 1.3vw;
+    font-weight: 100;
+}
+
+.page-2{
+    height: 100vh;
+    width: 100vw;
+    background: red;
+    position: relative;
+}
