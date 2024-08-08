@@ -611,19 +611,18 @@ gsap.to(".page-7-circle",{
     scroller:`#main`,
     scrub:.5
   },
-  scale:1.5
+  scale:1.2
 })
 
 
 
-gsap.to(".page-7-cirle-inner",{
+gsap.to(".page-7-circle-inner",{
   scrollTrigger:{
-    trigger:`.page-7-cirle-inner`,
+    trigger:`.page-7-circle-inner`,
     start:`top center`,
     end:`bottom top`,
     scroller:`#main`,
     scrub:.5,
-    markers: true
   },
-  backgroundColor : `#0a3bce91`,
+  backgroundColor : '#0a3bce91',
 })
